@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Person</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="container">
+        <div class="modal-container">
+          <div class="modal-content">
+            <button class="close-btn"><img src="" alt="close" /></button>
+            <form class="person-form" action="">
+              <div class="first-name-div">
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" required />
+              </div>
+              <div class="last-name-div">
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" required />
+              </div>
+              <div class="addres-div">
+                <label for="addres">Addres</label>
+                <input type="text" id="addres" required />
+              </div>
+              <div class="birdth-date-div">
+                <label for="birdthdate">Birdth-date</label>
+                <input type="date" id="birdthdate" required />
+              </div>
+              <div class="position-div">
+                <label for="position">Position</label>
+                <select class="position-select" name="position" id="">
+                  <option>ReactJs Developer</option>
+                  <option>NodeJs Developer</option>
+                  <option>Go Developer</option>
+                </select>
+              </div>
+              <div class="type-position-div">
+                <label for="typeposition">Type-position</label>
+                <select
+                  class="type-position-select"
+                  name="type-position"
+                  id="typeposition"
+                ></select>
+              </div>
+              <div class="salary-div">
+                <label for="salary">Salary</label>
+                <input type="number" id="salary" required />
+              </div>
+              <div class="is-married-div">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox">Is-married</label>
+              </div>
+              <div class="modal-btns">
+                <button>close</button>
+                <button type="submit">add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="search">
+            <input class="search-input" type="text" placeholder="Search..." />
+          </div>
+          <div class="filtered-selects">
+            <select name="typePosition" id="typePosition"></select>
+            <select name="isMarried" id="#isMarried">
+              <option>All</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+            <select name="salary-sort" id="#salary-sort">
+              <option>Normal</option>
+              <option>a-b</option>
+              <option>b-a</option>
+            </select>
+          </div>
+          <div class="person-add-btn">
+            <button>Add.</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container tables">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Addres</th>
+                <th scope="col">Birdthdate</th>
+                <th scope="col">Position</th>
+                <th scope="col">Typeposition</th>
+                <th scope="col">Salary</th>
+                <th scope="col">isMarried</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/selects.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

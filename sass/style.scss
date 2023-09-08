@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,*::after,*::before{
+  box-sizing: border-box
+}
+
+
+.container{
+  max-width: 1208px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  padding: 20px 0;
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    .search{
+      width: 700px;
+      .search-input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid yellowgreen;
+      }
+    }
+  }
+
+  .filtered-selects{
+    display: flex;
+    gap: 20px;
+    select{
+      padding: 4px;
+      border-radius: 5px;
+      border: 2px solid orange;
+    }
+  }
+
+  .person-add-btn{
+    button{
+      padding: 4px 8px;
+      border-radius: 5px;
+      border: 2px solid blue ;
+      background: aqua;
+    }
+  }
+}
+
+
+
+
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+
+  .container{
+    height: 100%;
+  }
+
+  &-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-content{
+      background:gray;
+      padding: 30px;
+      border-radius: 5px;
+      border: 2px solid black;
+      position: relative;
+
+      .close-btn{
+        position: absolute;
+        right: 4px;
+        top: 4px;
+      }
+
+      form{
+        div{
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+
+          input{
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+          }
+
+          select{
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+          }
+        }
+
+        .is-married-div{
+          flex-direction: row;
+          align-items: center;
+          input{
+            width: auto;
+            margin-right: 10px;
+          }
+        }
+
+        .modal-btns{
+          flex-direction:row;
+          gap: 10px;
+          button{
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            background-color: chocolate;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-show{
+  opacity: 1;
+  z-index: 999;
+}
+
+
+table{
+  width: 100%;
+  thead{
+    width: 100%;
+    th{
+      text-align: left;
+      padding: 5px;
+    }
+  }
+
+  tbody{
+    width: 100%;
+    td{
+      padding: 10px;
+    }
+  }
+}
